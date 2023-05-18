@@ -1,0 +1,382 @@
+.bannerArea {
+    width: 100%;
+    height: auto;
+    transition: 0.3s all;
+    padding-top: 130px;
+
+    //top
+    .top {
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        //loginArea
+        .loginArea {
+            width: 16.407%;
+            height: auto;
+            flex-shrink: 0;
+
+            //title
+            .title {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s all;
+                margin: 20px 0;
+
+                i {
+                    width: 50px;
+                    height: 50px;
+                    transition: 0.3s all;
+                    margin-right: 10px;
+                }
+
+                p {
+                    color: transparent;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background: $bannerArea_loginArea_titleColor;
+                    background-clip: text;
+                    transition: 0.3s all;
+                    margin-top: -5px;
+                }
+            }
+
+            //input
+            .inputBox {
+                width: 80%;
+                height: 35px;
+                position: relative;
+                transition: 0.3s all;
+                margin: 0 auto 25px;
+
+                &:nth-of-type(2) {
+                    margin-bottom: 30px;
+                }
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    @include loginArea_Input;
+                }
+
+                i {
+                    display: none;
+                    width: 19px;
+                    height: 19px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            //btnBox
+            .btnBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s all;
+                margin-bottom: 15%;
+
+                .loginBtn {
+                    width: 70%;
+                    height: 40px;
+                    @include loginArea_loginBtn;
+                    margin-bottom: 10px;
+                }
+
+                .forget {
+                    background: none;
+                    border: none;
+                    color: $bannerArea_loginArea_forgetColor;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    transition: 0.3s all;
+                }
+            }
+
+            //registerBox
+            .registerBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: 0.3s all;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    width: 70%;
+                    height: 40px;
+                    @include loginArea_registerBtn;
+                }
+            }
+        }
+
+        //swiper
+        .swiper {
+            width: 100%;
+            height: auto;
+
+            .swiper-slide {
+                height: auto !important;
+                font-size: 0;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            //dot
+            .swiper-pagination-bullets {
+                text-align: left;
+                bottom: 5%;
+                padding-left: 3%;
+
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                    background: $bannerArea_dot_BG;
+                    border-radius: 0;
+                    opacity: 0.5;
+                    margin: 0 10px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    opacity: 1;
+                    transform: scale(1.5);
+                }
+            }
+
+            //marqueeBox
+            .marqueeBox {
+                width: 100%;
+                height: 0;
+                background: $bannerArea_bottom_BG;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: 0.3s all;
+                overflow: hidden;
+                padding-left: 20px;
+                z-index: 1;
+    
+                //title
+                .title {
+                    width: 172px;
+                    height: 40px;
+                    @include marquee_title;
+                    flex-shrink: 0;
+    
+                    i {
+                        width: 33px;
+                        height: 27px;
+                        margin-right: 20px;
+                    }
+                }
+    
+                //marquee
+                .marquee {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    overflow: hidden;
+                    
+                    p {
+                        display: inline-block;
+                        color: $mainColor_1;
+                        font-size: 18px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        padding-left: 67%;
+                        animation: marquee 10s linear 0s infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    //bottom
+    .bottom {
+        width: 100%;
+        height: 55px;
+        transition: 0.3s all;
+        overflow: hidden;
+        background: $bannerArea_bottom_BG;
+
+        .marqueeBox {
+            width: 87%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+
+            //title
+            .title {
+                width: 172px;
+                height: 40px;
+                @include marquee_title;
+                flex-shrink: 0;
+
+                i {
+                    width: 33px;
+                    height: 27px;
+                    margin-right: 20px;
+                }
+            }
+
+            //marquee
+            .marquee {
+                width: 100%;
+                height: auto;
+                display: flex;
+                overflow: hidden;
+                
+                p {
+                    display: inline-block;
+                    color: $mainColor_1;
+                    font-size: 18px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    padding-left: 67%;
+                    animation: marquee 10s linear 0s infinite;
+                }
+
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        
+        .top {
+
+            .loginArea {
+
+                .title {
+                    margin: 10px 0;
+
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        margin-right: 5px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .inputBox {
+                    margin-bottom: 15px;
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .btnBox {
+
+                    .forget {
+                        font-size: 14px;
+                    }
+                }
+
+                .registerBox {
+
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1480px) {
+        padding-top: 120px;
+    }
+
+    @media only screen and (max-width: 1360px) {
+        
+        .top {
+
+            .loginArea {
+
+                .inputBox {
+                    
+                    .forget_ic {
+                        display: block;
+                    }
+                }
+
+                .btnBox {
+                    margin-bottom: 10px;
+
+                    .loginBtn {
+                        height: 35px;
+                        font-size: 15px;
+                        margin: 0;
+                    }
+
+                    .forget {
+                        display: none;
+                    }
+                }
+
+                .registerBox {
+
+                    p {
+                        display: none;
+                    }
+
+                    button {
+                        height: 35px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .swiper {
+
+                .swiper-pagination-bullets {
+                    bottom: 25%;
+                }
+
+                .marqueeBox {
+                    height: 55px;
+                }
+            }
+        }
+
+        .bottom {
+            height: 0;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+//header
+header .logo {
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+}
+
+//bannerArea
+.bannerArea .loginArea {
+    background: url('../images/bannerArea_loginArea_BG.jpg') no-repeat top center;
+    background-size: contain;
+}
+.bannerArea .loginArea .login_ic {
+    background: url('../images/bannerArea_loginArea_Icon.png') no-repeat center;
+    background-size: contain;
+}
+.bannerArea .loginArea .forget_ic {
+    background: url('../images/question.png') no-repeat center;
+    background-size: contain;
+}
+.bannerArea .marquee_ic {
+    background: url('../images/marquee_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//mainArea
+.mainArea .topList .innerBox {
+    background: url('../images/mainArea_topList_lineBG.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .topList .innerBox .cur {
+    background: url('../images/mainArea_topList_lineCircle.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .topList .innerBox .list li:not(.cur) i {
+    background: url('../images/mainArea_topList_listBtn.png') no-repeat;
+    background-size: 900%;
+}
+.mainArea .topList .title i {
+    background: url('../images/mainArea_topList_titleIcon.png') no-repeat;
+    background-size: 900%;
+}
+.mainArea .swiperBox .swiper-button-next-2,
+.mainArea .swiperBox .swiper-button-prev-2 {
+    background: url('../images/mainArea_swiper_arrow.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .right .title i {
+    background: url('../images/mainArea_right_titleIcon.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .right .gameList .textBox i {
+    background: url('../images/mainArea_right_innerArrow.png') no-repeat center;
+    background-size: contain;
+}
+
+//footer
+footer .vipBanner {
+    background: url('../images/footer_vipBanner.jpg') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .arrow_ic {
+    background: url('../images/footer_partner/partner_arrow.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .jili {
+    background: url('../images/footer_partner/jili.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .sp {
+    background: url('../images/footer_partner/sp.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .ab {
+    background: url('../images/footer_partner/ab.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .sport {
+    background: url('../images/footer_partner/36588.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .dg {
+    background: url('../images/footer_partner/dg.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .pls {
+    background: url('../images/footer_partner/pls.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .ifun {
+    background: url('../images/footer_partner/ifun.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .bng {
+    background: url('../images/footer_partner/bng.png') no-repeat center;
+    background-size: contain;
+}
+footer .partnerBox .tpg {
+    background: url('../images/footer_partner/tpg.png') no-repeat center;
+    background-size: contain;
+}
+footer .bottom .linkList li {
+    background: url('../images/footer_linkIcon.png') no-repeat;
+    background-size: 600%;
+}
+footer .bottom .gcLink::before {
+    background: url('../images/gcLink.png') no-repeat center;
+    background-size: contain;
+}

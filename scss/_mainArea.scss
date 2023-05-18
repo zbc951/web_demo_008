@@ -1,0 +1,463 @@
+.mainArea {
+    width: 100%;
+    height: auto;
+    background: $mainBG_1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -34%;
+        width: 80%;
+        height: 100%;
+        background: $mainBG_1_Shadow;
+        border-radius: 50%;
+    }
+
+    //left
+    .left {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 0 6.25%;
+
+        //topList
+        .topList {
+            width: 100%;
+            height: 0;
+            position: relative;
+            padding-top: 9.076%;
+
+            .innerBox {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                //title
+                .title {
+                    width: 22.5%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+                    padding-left: 3%;
+
+                    .textBox {
+                        width: 100%;
+                        height: 2.5vw;
+                        overflow: hidden;
+
+                        .inner {
+                            width: 100%;
+                            height: auto;
+                            transition: 0.5s all;
+
+                            &.all {
+                                transform: translateY(-12.5%);
+                            }
+                            &.sport {
+                                transform: translateY(-25%);
+                            }
+                            &.live {
+                                transform: translateY(-37.5%);
+                            }
+                            &.slot {
+                                transform: translateY(-50%);
+                            }
+                            &.lottery {
+                                transform: translateY(-62.5%);
+                            }
+                            &.fish {
+                                transform: translateY(-75%);
+                            }
+                            &.board {
+                                transform: translateY(-87.5%);
+                            }
+
+                            p {
+                                width: 100%;
+                                height: 2.5vw;
+                                display: flex;
+                                align-items: center;
+    
+                                i {
+                                    width: 2.5vw;
+                                    height: 100%;
+                                    margin-right: 10px;
+    
+                                    &.all {
+                                        background-position-x: 25%;
+                                    }
+                                    &.sport {
+                                        background-position-x: 37.5%;
+                                    }
+                                    &.live {
+                                        background-position-x: 50%;
+                                    }
+                                    &.slot {
+                                        background-position-x: 62.5%;
+                                    }
+                                    &.lottery {
+                                        background-position-x: 75%;
+                                    }
+                                    &.fish {
+                                        background-position-x: 87.5%;
+                                    }
+                                    &.board {
+                                        background-position-x: 100%;
+                                    }
+                                }
+    
+                                span {
+                                    color: $mainColor_1;
+                                    font-size: 1.2vw;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //list
+                .list {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+
+                    li:not(.cur) {
+                        width: 12.728%;
+                        height: 100%;
+                        position: relative;
+
+                        &.all {
+
+                            i {
+                                background-position-x: 25%;
+                            }
+                        }
+                        &.sport {
+
+                            i {
+                                background-position-x: 37.5%;
+                            }
+                        }
+                        &.live {
+
+                            i {
+                                background-position-x: 50%;
+                            }
+                        }
+                        &.slot {
+
+                            i {
+                                background-position-x: 62.5%;
+                            }
+                        }
+                        &.lottery {
+
+                            i {
+                                background-position-x: 75%;
+                            }
+                        }
+                        &.fish {
+
+                            i {
+                                background-position-x: 87.5%;
+                            }
+                        }
+                        &.board {
+
+                            i {
+                                background-position-x: 100%;
+                            }
+                        }
+
+                        &:hover,*:active {
+
+                            i {
+                                background-position-y: 100%;
+                            }
+                        }
+                        &.active {
+
+                            i {
+                                background-position-y: 100%;
+                                transform: translate(-50%,-45%) scale(1.05);
+                            }
+                        }
+
+                        i {
+                            width: 72%;
+                            height: 78.27%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            transition: 0.3s transform;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .cur {
+                        width: 12.728%;
+                        height: 100%;
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                        transition: 0.5s all;
+                        transform-origin: bottom;
+                        pointer-events: none;
+                        
+                        &.moveRight {
+                            animation: topListCricle_move_1 0.75s ease-out 0s;
+                        }
+                        &.moveLeft {
+                            animation: topListCricle_move_2 0.75s ease-out 0s;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 59%;
+                            height: 5px;
+                            background: $mainBG_1;
+                        }
+
+                        @keyframes topListCricle_move_1 {
+                            0% {
+                                transform: skewX(0deg);
+                            }
+
+                            25% {
+                                transform: skewX(30deg);
+                            }
+
+                            50% {
+                                transform: skewX(-10deg);
+                            }
+
+                            85% {
+                                transform: skewX(5deg);
+                            }
+
+                            100% {
+                                transform: skewX(0deg);
+                            }
+                        }
+                        @keyframes topListCricle_move_2 {
+                            0% {
+                                transform: skewX(0deg);
+                            }
+
+                            25% {
+                                transform: skewX(-30deg);
+                            }
+
+                            50% {
+                                transform: skewX(10deg);
+                            }
+
+                            85% {
+                                transform: skewX(-5deg);
+                            }
+
+                            100% {
+                                transform: skewX(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //swiper-grid
+        .swiperBox {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 25px 0;
+
+            .swiper-mygrid {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+    
+                .swiper-wrapper {
+    
+                    .swiper-slide {
+                        cursor: pointer;
+    
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                        }
+
+                        p {
+                            color: $mainColor_1;
+                            font-size: 1vw;
+                            font-weight: bold;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+    
+            .swiper-button-next-2,
+            .swiper-button-prev-2 {
+                width: 2.605%;
+                height: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                padding-top: 5.209%;
+                margin: 0;
+                z-index: 1;
+            }
+            .swiper-button-next-2 {
+                right: -5%;
+                transform: translateY(-50%) scaleX(-1);
+            }
+            .swiper-button-prev-2 {
+                left: -5%;
+            }
+        }
+    }
+
+    //right
+    .right {
+        width: 21.5%;
+        height: auto;
+        flex-shrink: 0;
+        padding-top: 50px;
+
+        .gameBox {
+            width: 90%;
+            height: auto;
+            background: $mainArea_right_BG;
+            border: solid 1px $mainArea_right_Border;
+            padding: 10px 20px 25px;
+
+            //title
+            .title {
+                width: 100%;
+                height: auto;
+                border-bottom: solid 1px $mainArea_right_TitleBorder;
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+
+                i {
+                    width: 10.875%;
+                    height: 0;
+                    padding-top: 12.59%;
+                    margin-right: 10px;
+                }
+
+                p {
+                    color: $mainArea_right_TitleColor;
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                }
+            }
+
+            //gameList
+            .gameList {
+                width: 100%;
+                height: auto;
+                
+                li {
+                    width: 100%;
+                    height: 72px;
+                    background: $mainArea_right_innerBG;
+                    border: solid 1px $mainArea_right_innerBorder;
+                    position: relative;
+                    display: flex;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    //imgBox
+                    .imgBox {
+                        width: auto;
+                        height: 100%;
+                        position: relative;
+                        flex-shrink: 0;
+
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                        }
+
+                        p {
+                            width: auto;
+                            height: auto;
+                            @include innerLevel;
+                            position: absolute;
+                            top: -3px;
+                            left: -5px;
+
+                            &.one {
+                                background: $innerLevel_one;
+                            }
+                            &.two {
+                                background: $innerLevel_two;
+                            }
+                            &.three {
+                                background: $innerLevel_three;
+                            }
+                        }
+                    }
+
+                    //textBox
+                    .textBox {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        padding-left: 20px;
+
+                        .smallTitle {
+                            color: $mainArea_right_innerTitleColor;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+
+                        .name {
+                            color: $mainColor_1;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+
+                        i {
+                            width: 23px;
+                            height: 19px;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

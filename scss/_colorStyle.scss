@@ -1,0 +1,158 @@
+//header
+$header_top_BG: #35241a;
+$header_bottom_BG: linear-gradient(to right,#9b4c18 0%,#6b2e15 12%,#9b4c18 42%,#9b4c18 76%,#6b2e15 98%);
+$header_lang_border_1: #7b6152;
+$header_lang_border_2: #1d1510;
+$header_Shadow: #00000080;
+@mixin headerListBtn {
+    background: none;
+    border: solid 1px transparent;
+    color: #eee5ca;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+    cursor: pointer;
+    padding: 0 20px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#692e07 0%,#3d0f05 65%);
+        border-color: #c1762d;
+        box-shadow: 0 0 12px 8px #3d0f05 inset;
+    }
+}
+
+//bannerArea
+$bannerArea_loginArea_titleColor: linear-gradient(to top,#fedd7f 7%,#ca892b 41%,#fedd7f 82%);
+@mixin loginArea_Input {
+    background: #f2efec;
+    border: solid 1px #fffffe;
+    box-shadow: 0 3px 10px 0 #00000049 inset;
+    color: #101010;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: #7d736f;
+    }
+}
+@mixin loginArea_loginBtn {
+    background: linear-gradient(to top,#c86a32 0%,#914728 48%,#de7a3f 100%);
+    border: solid 1px #ead289;
+    box-shadow: -2px -2px 3px 0 #723f1d inset,0 5px 8px 0 #00000080;
+    color: #fffbed;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.15s all;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#cc0c21 0%,#6d0c0c 100%);
+        box-shadow: none;
+        transform: translateY(2px);
+    }
+}
+@mixin loginArea_registerBtn {
+    background: linear-gradient(to top,#ca892b 23%,#f4d159 100%);
+    border: solid 1px #ead289;
+    box-shadow: -2px -2px 3px 0 #79521e inset,0 5px 8px 0 #00000080;
+    color: #2c150c;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.15s all;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#1c7bdd 0%,#0e53ba 100%);
+        box-shadow: none;
+        color: #fffffe;
+        transform: translateY(2px);
+    }
+}
+$bannerArea_loginArea_forgetColor: #ffe822;
+$bannerArea_dot_BG: #ffffff;
+$bannerArea_bottom_BG: linear-gradient(to right,#6b2e15 4%,#9b4c18 38%,#9b4c18 80%,#6b2e15 98%);
+@mixin marquee_title {
+    background: linear-gradient(to right,#e6ae34 0%,#fae395 17%,#f3d058 43%,#e19f40 77%,#f3d058 100%);
+    border-radius: 30px;
+    border: solid 1px #ffeda5;
+    color: #472619;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+//mainArea
+$mainArea_right_BG: #241711;
+$mainArea_right_Border: #8d5f4f;
+$mainArea_right_TitleColor: #fdcb12;
+$mainArea_right_TitleBorder: #ffe085;
+$mainArea_right_innerBG: #452511;
+$mainArea_right_innerBorder: #613c26;
+$mainArea_right_innerTitleColor: #e99b6f;
+@mixin innerLevel {
+    background: #1f99e6;
+    border-radius: 0 30px 30px 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px 5px 5px;
+}
+$innerLevel_one: #db2020;
+$innerLevel_two: #ed6817;
+$innerLevel_three: #f0b20a;
+
+//footer
+$footer_topBorder: linear-gradient(to right,#cc8c2c 0%,#f7db6e 34%,#cc8c2c 73%,#f9d650 100%);
+$footer_titleColor: linear-gradient(to top,#90591e 6%,#f69f42 86%);
+@mixin footer_vipBtn {
+    background: linear-gradient(to top,#ca892b 23%,#f4d159 100%);
+    border: solid 1px #ead289;
+    box-shadow: -2px -2px 3px 0 #79521e inset,0 5px 8px 0 #00000080;
+    color: #2c150c;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.15s all;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#1c7bdd 0%,#0e53ba 100%);
+        box-shadow: none;
+        color: #fffffe;
+        transform: translateY(2px);
+    }
+}
+$footer_partner_BG: #5f3318;
+$footer_partner_Border: #8b4c26;
+$footer_bottom_Border: #5d4236;
+$footer_bottom_gcLinkBG: #ffe9a8;
+@mixin serviceBtn {
+    background: linear-gradient(to top,#eb9821 0%,#ffe553 100%);
+    border-radius: 16px;
+    border: solid 1px #ffec6a;
+    color: #251711;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#ffbc2d 0%,#e1650b 100%);
+    }
+}
+@mixin footerList {
+    color: #ac7c60;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        color: #ffe220;
+        text-decoration: underline;
+    }
+}
+
+//mainColor
+$mainColor_1: #eee5ca;
+
+$mainBG_1: #301d16; 
+$mainBG_1_Shadow: radial-gradient(#3a2216 0%,transparent 67%);

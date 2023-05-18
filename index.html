@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link class="cssList" rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+<body onload="currentTime()">
+    <!--header-->
+    <header>
+        <!--top-->
+        <section class="top">
+            <!--time-->
+            <p class="time"></p>
+            <!--lang-->
+            <label class="selectBox">
+                <select>
+                    <option value="">繁體中文</option>
+                    <option value="">简体中文</option>
+                    <option value="">日本語</option>
+                    <option value="">ENGLISH</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
+        </section>
+        <!--bottom-->
+        <section class="bottom">
+            <ul>
+                <ol>
+                    <li class="active">
+                        <p>首頁</p>
+                    </li>
+                    <li>
+                        <p>體育賽事</p>
+                    </li>
+                    <li>
+                        <p>真人娛樂</p>
+                    </li>
+                    <li>
+                        <p>彩票</p>
+                    </li>
+                    <li>
+                        <p>老虎機</p>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <p>捕魚機</p>
+                    </li>
+                    <li>
+                        <p>棋牌遊戲</p>
+                    </li>
+                    <li>
+                        <p>優惠中心</p>
+                    </li>
+                    <li>
+                        <p>VIP會員</p>
+                    </li>
+                </ol>
+            </ul>
+        </section>
+        <!--logo-->
+        <a href="./index.html" class="logo"></a>
+    </header>
+    <!--bannerArea-->
+    <section class="bannerArea">
+        <!--top-->
+        <div class="top">
+            <!--loginArea-->
+            <div class="loginArea">
+                <!--title-->
+                <div class="title">
+                    <i class="login_ic"></i>
+                    <p>會員登入</p>
+                </div>
+                <!--input-->
+                <label class="inputBox">
+                    <input type="text" placeholder="帳戶">
+                </label>
+                <label class="inputBox">
+                    <input type="password" placeholder="密碼">
+                    <i class="forget_ic"></i>
+                </label>
+                <!--btnBox-->
+                <div class="btnBox">
+                    <button class="loginBtn">登入</button>
+                    <button class="forget">忘記密碼?</button>
+                </div>
+                <!--registerBox-->
+                <div class="registerBox">
+                    <p>還不是會員?</p>
+                    <button>點擊註冊</button>
+                </div>
+            </div>
+            <!--swiper-->
+            <section class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner.jpg" alt="">
+                    </div>
+                </div>
+                <!--dot-->
+                <div class="swiper-pagination"></div>
+                <!--marqueeBox-->
+                <div class="marqueeBox">
+                    <!--title-->
+                    <div class="title">
+                        <i class="marquee_ic"></i>
+                        <p>最新消息</p>
+                    </div>
+                    <!--marquee-->
+                    <div class="marquee">
+                        <p>TEST............................新站上架，首儲111111即送111!!!!!!!!!</p>
+                        <p>TEST............................新站上架，首儲111111即送111!!!!!!!!!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--bottom-->
+        <div class="bottom">
+            <div class="marqueeBox">
+                <!--title-->
+                <div class="title">
+                    <i class="marquee_ic"></i>
+                    <p>最新消息</p>
+                </div>
+                <!--marquee-->
+                <div class="marquee">
+                    <p>TEST............................新站上架，首儲111111即送111!!!!!!!!!</p>
+                    <p>TEST............................新站上架，首儲111111即送111!!!!!!!!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--mainArea-->
+    <main class="mainArea">
+        <!--left-->
+        <article class="left">
+            <!--topList-->
+            <div class="topList">
+                <div class="innerBox">
+                    <!--title-->
+                    <div class="title">
+                        <div class="textBox">
+                            <div class="inner all">
+                                <p></p>
+                                <p>
+                                    <i class="all"></i>
+                                    <span>全部遊戲</span>
+                                </p>
+                                <p>
+                                    <i class="sport"></i>
+                                    <span>體育賽事</span>
+                                </p>
+                                <p>
+                                    <i class="live"></i>
+                                    <span>真人遊戲</span>
+                                </p>
+                                <p>
+                                    <i class="slot"></i>
+                                    <span>老虎機</span>
+                                </p>
+                                <p>
+                                    <i class="lottery"></i>
+                                    <span>彩票投注</span>
+                                </p>
+                                <p>
+                                    <i class="fish"></i>
+                                    <span>捕魚機</span>
+                                </p>
+                                <p>
+                                    <i class="board"></i>
+                                    <span>棋牌遊戲</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--list-->
+                    <ul class="list">
+                        <li class="all active">
+                            <i></i>
+                        </li>
+                        <li class="sport">
+                            <i></i>
+                        </li>
+                        <li class="live">
+                            <i></i>
+                        </li>
+                        <li class="slot">
+                            <i></i>
+                        </li>
+                        <li class="lottery">
+                            <i></i>
+                        </li>
+                        <li class="fish">
+                            <i></i>
+                        </li>
+                        <li class="board">
+                            <i></i>
+                        </li>
+                        <li class="cur"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--swiper-grid-->
+            <div class="swiperBox">
+                <div class="swiper-mygrid">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/bng.png" alt="">
+                            <p>BNG GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/pls.png" alt="">
+                            <p>PLS GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/ifun.png" alt="">
+                            <p>IFUN GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/36588.png" alt="">
+                            <p>36588 SPORTS</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/ab.png" alt="">
+                            <p>AB LIVES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/wm.png" alt="">
+                            <p>WM LIVES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/gs.png" alt="">
+                            <p>京彩 LOTTERY</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/jili.png" alt="">
+                            <p>JILI GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/rsg.png" alt="">
+                            <p>RSG FISHING</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/elk.png" alt="">
+                            <p>ELK GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/bng.png" alt="">
+                            <p>BNG GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/pls.png" alt="">
+                            <p>PLS GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/ifun.png" alt="">
+                            <p>IFUN GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/36588.png" alt="">
+                            <p>36588 SPORTS</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/ab.png" alt="">
+                            <p>AB LIVES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/wm.png" alt="">
+                            <p>WM LIVES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/gs.png" alt="">
+                            <p>京彩 LOTTERY</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/jili.png" alt="">
+                            <p>JILI GAMES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/rsg.png" alt="">
+                            <p>RSG FISHING</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gameImg/elk.png" alt="">
+                            <p>ELK GAMES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev-2"></div>
+                <div class="swiper-button-next-2"></div>
+            </div>
+        </article>
+        <!--right-->
+        <section class="right">
+            <div class="gameBox">
+                <!--title-->
+                <div class="title">
+                    <i></i>
+                    <p>HOT GAME</p>
+                </div>
+                <!--gameList-->
+                <ul class="gameList">
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p class="one">TOP 1</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p class="two">TOP 2</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p class="three">TOP 3</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p>TOP 4</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p>TOP 5</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <!--imgBox-->
+                        <div class="imgBox">
+                            <img src="./images/mainArea_right_innerGameIcon.png" alt="">
+                            <p>TOP 6</p>
+                        </div>
+                        <!--textBox-->
+                        <div class="textBox">
+                            <p class="smallTitle">IFUN GAMES</p>
+                            <p class="name">ONMIOJI</p>
+                            <i></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <!--topBorder-->
+        <div class="topBorder"></div>
+        <!--vipBanner-->
+        <section class="vipBanner">
+            <div class="box">
+                <p class="title">VIP會員優惠</p>
+                <p class="sub">
+                    vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠
+                    <br>
+                    vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠
+                    <br>
+                    vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠vip優惠
+                </p>
+                <button>立即查看</button>
+            </div>
+        </section>
+        <!--partnerBox-->
+        <section class="partnerBox">
+            <div class="center">
+                <i class="arrow_ic prev"></i>
+                <ul>
+                    <ol>
+                        <li class="jili"></li>
+                        <li class="sp"></li>
+                        <li class="ab"></li>
+                        <li class="sport"></li>
+                        <li class="dg"></li>
+                        <li class="pls"></li>
+                        <li class="ifun"></li>
+                        <li class="bng"></li>
+                        <li class="tpg"></li>
+                    </ol>
+                </ul>
+                <i class="arrow_ic next"></i>
+            </div>
+        </section>
+        <!--bottom-->
+        <section class="bottom">
+            <div class="center">
+                <!--left-->
+                <div class="left">
+                    <p class="title">聯絡我們</p>
+                    <ul class="linkList">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="btnBox">
+                        <button class="gcLink"></button>
+                        <button class="service">24HR線上客服</button>
+                    </div>
+                </div>
+                <!--right-->
+                <div class="right">
+                    <div class="title">
+                        <ul>
+                            <li>
+                                <p>最新公告</p>
+                            </li>
+                            <li>
+                                <p>關於我們</p>
+                            </li>
+                            <li>
+                                <p>新手幫助</p>
+                            </li>
+                            <li>
+                                <p>常見問題</p>
+                            </li>
+                            <li>
+                                <p>VIP會員</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listBox">
+                        <ul>
+                            <li>
+                                <a href="#">一般</a>
+                                <a href="#">熱門</a>
+                                <a href="#">存款</a>
+                            </li>
+                            <li>
+                                <a href="#">隱私政策</a>
+                                <a href="#">責任博彩</a>
+                                <a href="#">服務條款</a>
+                                <a href="#">安全性</a>
+                            </li>
+                            <li>
+                                <a href="#">開戶</a>
+                                <a href="#">存款教學</a>
+                                <a href="#">提款</a>
+                                <a href="#">優惠規則</a>
+                            </li>
+                            <li>
+                                <a href="#">常見問題</a>
+                                <a href="#">遠端協助</a>
+                            </li>
+                            <li>
+                                <a href="#">會員階級</a>
+                                <a href="#">VIP詳情</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
